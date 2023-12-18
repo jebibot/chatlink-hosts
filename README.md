@@ -1,3 +1,3 @@
 # hosts
 
-hosts for AfLink
+hosts for CHATLink

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 제어됩니다. 어셈블리와 관련된 정보를 수정하려면
 // 이러한 특성 값을 변경하세요.
 [assembly: AssemblyTitle("hosts")]
-[assembly: AssemblyDescription("hosts for AfLink")]
+[assembly: AssemblyDescription("hosts for CHATLink")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jebibot")]
 [assembly: AssemblyProduct("hosts")]
-[assembly: AssemblyCopyright("Copyright © Jebibot 2022")]
+[assembly: AssemblyCopyright("Copyright © Jebibot 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

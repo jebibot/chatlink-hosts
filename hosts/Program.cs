@@ -7,6 +7,7 @@ namespace hosts
 {
     internal class Program
     {
+        // Leave old name for backward compatibility
         private const string COMMENT_AFLINK = "# AFLINK";
 
         static void Main(string[] args)
