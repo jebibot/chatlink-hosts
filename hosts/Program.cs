@@ -55,13 +55,16 @@ namespace hosts
             }
 
             // Add new entries
-            foreach (var host in args)
+            for (int i = 0; i < args.Length; i++)
             {
-                if (Uri.CheckHostName(host) != UriHostNameType.Dns)
+                foreach (var host in args[i].Split(','))
                 {
-                    throw new Exception("Invalid host!");
+                    if (Uri.CheckHostName(host) != UriHostNameType.Dns)
+                    {
+                        throw new Exception("Invalid host!");
+                    }
+                    result.Add($"127.0.0.{i + 1} {host} {COMMENT_AFLINK}");
                 }
-                result.Add($"127.0.0.1 {host} {COMMENT_AFLINK}");
             }
             File.WriteAllLines(hostsFile, result.ToArray());
         }
